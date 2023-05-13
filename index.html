@@ -1,0 +1,681 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Personal Portfolio</title>
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet' />
+    <link rel="stylesheet" href="css/style.css" />
+    <link rel="stylesheet" href="css/phone.css" />
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+</head>
+
+<body>
+
+
+    <!-- <-----------Header Section Start--------->
+    <header>
+        <!-- <-----------Animated Section Start--------->
+        <section class="animated">
+            <h2 class="text-1 text">Portfolio</h2>
+            <h2 class="text-2 text">Created By</h2>
+            <h2 class="text-3 text">Aman Kumar</h2>
+        </section>
+        <!-- <-----------Animated Section End--------->
+
+        <section class="header">
+            <div class="logo">
+                <a href="index.html">Port<span>Folio</span></a>
+            </div>
+
+
+            <ul class="nav" id="nav">
+                <li><a href="#home">Home</a></li>
+                <li><a href="#about">About</a></li>
+                <li><a href="#services">Services</a></li>
+                <li><a href="#project">Projects</a></li>
+                <li><a href="#contact">Contact us</a></li>
+            </ul>
+
+            <div class="box" id="box" onclick="box(event)">
+                <i class="fa-solid fa-bars" id="bar"></i>
+                <i class="fa-solid fa-xmark" id="cross"></i>
+            </div>
+
+            <div class="scroll-btn" id="scroll-btn">
+                <a href="#home"><i class="fa-solid fa-arrow-up"></i></a>
+            </div>
+
+        </section>
+    </header>
+    <!-- <-----------Header Section End--------->
+
+    <!-- <-----------Main Section Start--------->
+    <main>
+        <!-- <-----------Home Section Start--------->
+        <section class="home-container" id="home">
+            <div class="home">
+                <div class="home-content">
+                    <h3>Hello, It's Me</h3>
+                    <h1>Aman Kumar</h1>
+                    <h3>And I'm a <span id="multiText"></span></h3>
+                    <p> I love to create beautiful and performant products <br> with delightful user experiences.</p>
+                    <div class="social-media">
+                        <a href="https://www.facebook.com/home.php" target="_blank"><i class='bx bxl-facebook'></i></a>
+                        <a href="https://twitter.com/aman266226" target="_blank"><i class='bx bxl-twitter'></i></a>
+                        <a href="https://www.instagram.com/" target="_blank"><i class="fa-brands fa-instagram"></i></a>
+                        <a href="https://www.linkedin.com/in/amankumar1in/" target="_blank"><i
+                                class='bx bxl-linkedin'></i></a>
+                    </div>
+                </div>
+                <div class="home-button">
+                    <a href="img/resume/Aman-FrontEndDev-1999.pdf" download="Aman-FrontEndDev-1999" class="btn">Download
+                        CV</a>
+                    <a href="#contact" class="redBtn">Hire Me</a>
+                </div>
+            </div>
+
+            <div class="card">
+                <div class="card-img">
+                    <img src="img/home-img/img-1.jpg" alt="img1">
+                    <img src="img/home-img/img-2.jpg" alt="img2">
+                </div>
+                <div class="details">
+                    <div class="content">
+                        <h2> Enthusiastic <br /> <span>Frontend Developer</span></h2>
+                        <div class="social-media">
+                            <a href="https://www.facebook.com/home.php" target="_blank"><i
+                                    class='bx bxl-facebook'></i></a>
+                            <a href="https://twitter.com/aman266226" target="_blank"><i class='bx bxl-twitter'></i></a>
+                            <a href="https://www.instagram.com/" target="_blank"><i
+                                    class="fa-brands fa-instagram"></i></a>
+                            <a href="https://www.linkedin.com/in/amankumar1in/" target="_blank"><i
+                                    class='bx bxl-linkedin'></i></a>
+                        </div>
+                    </div>
+
+                </div>
+                <i class="fa-solid fa-angles-right"></i>
+            </div>
+
+        </section>
+        <!-- <-----------Home Section End--------->
+
+        <!-- <-----------About Section Start--------->
+        <section class="about" id="about">
+            <h2 class="heading">About <span>Me</span></h2>
+            <div class="about-content">
+
+                <div class="about-img">
+                    <img src="img/home-img/img-2.jpg" alt="AmanPic">
+                </div>
+
+                <div class="about-details">
+                    <div class="about-headings" onclick="about_head(event)">
+                        <h3 class="p-btn pro-abt-btns" data-about-num="1" id="head-dev">Frontend Developer</h3>
+                        <h3 class="p-btn pro-abt-btns" data-about-num="2" id="head-edu">Education</h3>
+                        <h3 class="p-btn pro-abt-btns" data-about-num="3" id="head-skills">Skills</h3>
+                    </div>
+
+                    <div class="about-heading-content">
+
+                        <div class="about-text-1 about-text">
+                            <p>I'm a success-driven, determined Front-end Web Developer.I'm good at using HTML, SCSS &
+                                JavaScript to build accessible component-based web pages and systems. I also make the
+                                websites more & more interactive with web animations. A passionate person willing to
+                                learn more technologies to become a better developer than i was yesterday.
+                            </p>
+                            <a href="img/resume/Aman-FrontEndDev-1999.pdf" download="Aman-FrontEndDev-1999"
+                                class="btn">Download
+                                CV</a>
+                        </div>
+
+                        <div class="about-text-2 about-text">
+                            <div class="edu-details">
+                                <h1>2018-2019 <span>(Intermediate)</span></h1>
+                                <p>Passed 12<sup>th</sup> from National Institute of Open Schooling (NIOS Board).</p>
+                            </div>
+                            <div class="edu-details">
+                                <h1>2019-2022 <span>(Graduation)</span></h1>
+                                <p>Passed BSC(Non-medical) from Maharshi Dayanand University.</p>
+                            </div>
+                            <div class="edu-details">
+                                <h1>2022-Present <span>(Post Graduation)</span></h1>
+                                <p>Pursuing MCA from Chandigarh University.</p>
+                            </div>
+                        </div>
+
+                        <div class="about-text-3 about-text">
+                            <div class="about-stats">
+                                <h3>HTML</h3>
+                                <div class="about-progress-bar ">
+                                    <span style="--left-pos: 85%;">90%</span>
+                                </div>
+                            </div>
+                            <div class="about-stats">
+                                <h3>CSS</h3>
+                                <div class="about-progress-bar about-progress-2">
+                                    <span style="--left-pos: 75%;">80%</span>
+                                </div>
+                            </div>
+                            <div class="about-stats">
+                                <h3>JavaScript</h3>
+                                <div class="about-progress-bar about-progress-3">
+                                    <span style="--left-pos: 65%;">70%</span>
+                                </div>
+                            </div>
+                            <div class="about-stats">
+                                <h3>Bootstrap</h3>
+                                <div class="about-progress-bar about-progress-4">
+                                    <span style="--left-pos: 75%;">80%</span>
+                                </div>
+                            </div>
+                            <div class="about-stats">
+                                <h3>SCSS</h3>
+                                <div class="about-progress-bar about-progress-5">
+                                    <span style="--left-pos: 85%;">90%</span>
+                                </div>
+                            </div>
+                            <div class="about-stats">
+                                <h3>jQuery</h3>
+                                <div class="about-progress-bar about-progress-6">
+                                    <span style="--left-pos: 70%;">75%</span>
+                                </div>
+                            </div>
+                        </div>
+
+                    </div>
+                </div>
+            </div>
+        </section>
+
+
+
+
+
+        <!-- <-----------About Section End--------->
+
+
+        <!-- <-----------Services Section Start--------->
+        <section class="services" id="services">
+            <h2 class="heading">Our <span>Services</span></h2>
+
+            <div class="services-container">
+
+                <div class="services-box">
+                    <div class="services-content">
+                        <div class="services-icon">
+                            <i class="fa-sharp fa-solid fa-paintbrush"></i>
+                        </div>
+                        <div class="services-text">
+                            <h3>Designing</h3>
+                            <p>Designers are responsible artists. Whether it is web designing or development it requires
+                                a sense of imagination for looking at the output even before it is published.</p>
+                            <a href="#contact" class="btn">Get in touch</a>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="services-box">
+                    <div class="services-content">
+                        <div class="services-icon">
+                            <i class="fa-solid fa-person"></i>
+                        </div>
+                        <div class="services-text">
+                            <h3>Freelancing</h3>
+                            <p>People Who Are Crazy Enough To Think They Can Change The World, Are The Ones Who Do. We
+                                provide the best services. To contact us, please click on the button below.</p>
+                            <a href="#contact" class="btn">Get in touch</a>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="services-box">
+                    <div class="services-content">
+                        <div class="services-icon">
+                            <i class="fa-sharp fa-solid fa-layer-group"></i>
+                        </div>
+                        <div class="services-text">
+                            <h3>Development</h3>
+                            <p>A successful website does three things:
+                                It attracts the right kinds of visitors.
+                                Guides them to the main services or product you offer.
+                                Collect Contact details for future ongoing relation.</p>
+                            <a href="#contact" class="btn">Get in touch</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="services-box">
+                    <div class="services-content">
+                        <div class="services-icon">
+                            <i class="fa-sharp fa-solid fa-code"></i>
+                        </div>
+                        <div class="services-text">
+                            <h3>SEO</h3>
+                            <p>We always opt for the SEO-friendly markup that maximizes the website visibility. We
+                                always
+                                make sure that every converted web page loads faster and optimizes the user-experience.
+                            </p>
+                            <a href="#contact" class="btn">Get in touch</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="services-box">
+                    <div class="services-content">
+                        <div class="services-icon">
+                            <i class="fa-solid fa-magnifying-glass-plus"></i>
+                        </div>
+                        <div class="services-text">
+                            <h3>Debugging</h3>
+                            <p>The hardest part of the software task is arriving at a complete and consistent
+                                specification, and much of the essence of building a program is in fact the debugging of
+                                the specification.</p>
+                            <a href="#contact" class="btn">Get in touch</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="services-box">
+                    <div class="services-content">
+                        <div class="services-icon">
+                            <i class="fa-solid fa-palette"></i>
+                        </div>
+                        <div class="services-text">
+                            <h3>PSD to HTML</h3>
+                            <p>We manually code a design’s every pixel to guarantee the best outcome. We follow
+                                international
+                                coding standards and fulfill our clients’ all requirements to ensure 100% satisfaction.
+                            </p>
+                            <a href="#contact" class="btn">Get in touch</a>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </section>
+        <!-- <-----------Services Section End--------->
+
+
+        <!-- <-----------Projects Section Start--------->
+        <section class="project" id="project">
+            <h2 class="heading">Our<span> Projects</span></h2>
+
+            <div class="project-btns" onclick="projectBtns(event)">
+                <div class="p-btn pro-abt-btns" data-btn-num="1">All</div>
+                <div class="p-btn pro-abt-btns" data-btn-num="2">Website</div>
+                <div class="p-btn pro-abt-btns" data-btn-num="3">Coding</div>
+            </div>
+
+            <div class="project-container">
+                <div class="project-box p-btn--1 p-btn--2">
+                    <div class="links">
+                        <div class="link1"></div>
+                        <div class="link2">
+                            <a href="https://github.com/amankumar2k15/Food-Delivery-Website" target="_blank"><i
+                                    class="fa-brands fa-github"></i></a>
+                        </div>
+                    </div>
+
+                    <div class="img">
+                        <img src="../img/project-img/project-img-1.png" alt="img1">
+                    </div>
+                    <h2>Food Delivery Website</h2>
+
+                    <div class="project-layer">
+                        <h2>Project 1</h2>
+                        <p>Created Responsive Food Delivery Website by using HTML5 and CSS3. Click on the below button
+                            to enter into my website. </p>
+                        <a href="https://bestfooddelivery.netlify.app" target="_blank"><i
+                                class="fa-solid fa-arrow-up-right-from-square"></i></a>
+                    </div>
+                </div>
+
+                <div class="project-box p-btn--1 p-btn--2">
+                    <div class="links">
+                        <div class="link1"></div>
+                        <div class="link2">
+                            <a href="https://github.com/amankumar2k15/Beefeater-Website" target="_blank"> <i
+                                    class="fa-brands fa-github"></i></a>
+                        </div>
+                    </div>
+
+                    <div class="img">
+                        <img src="../img/project-img/project-img-2.png" alt="img2">
+                    </div>
+                    <h2>Beefeater Website</h2>
+
+                    <div class="project-layer">
+                        <h2>Project 2</h2>
+                        <p>Created Beefeater Website by using HTML, CSS3 and JavaScript. In it i have used Animation on
+                            scroll library for lucrative experience.</p>
+                        <a href="https://beefeater-website.netlify.app/" target="_blank"><i
+                                class="fa-solid fa-arrow-up-right-from-square"></i></a>
+                    </div>
+                </div>
+
+                <div class="project-box p-btn--1 p-btn--3">
+                    <div class="links">
+                        <div class="link1"></div>
+                        <div class="link2">
+                            <a href="https://github.com/amankumar2k15/Login-Registration-Form" target="_blank"> <i
+                                    class="fa-brands fa-github"></i></a>
+                        </div>
+                    </div>
+
+                    <div class="img">
+                        <img src="../img/project-img/project-img-3.png" alt="img2">
+                    </div>
+                    <h2>Validation Form</h2>
+
+                    <div class="project-layer">
+                        <h2>Project 3</h2>
+                        <p>Created Login and Registration form by using Bootstrap and Javascript. In it i have used
+                            axios library to post and get the data.</p>
+                        <a href="https://login-and-registration.netlify.app/" target="_blank"><i
+                                class="fa-solid fa-arrow-up-right-from-square"></i></a>
+                    </div>
+                </div>
+
+                <div class="project-box p-btn--1 p-btn--3">
+                    <div class="links">
+                        <div class="link1"></div>
+                        <div class="link2">
+                            <a href="https://github.com/amankumar2k15/ToDo-List-App" target="_blank"><i
+                                    class="fa-brands fa-github"></i></a>
+                        </div>
+                    </div>
+
+                    <div class="img">
+                        <img src="../img/project-img/project-img-4.png" alt="img3">
+                    </div>
+                    <h2>ToDo List</h2>
+
+                    <div class="project-layer">
+                        <h2>Project 4</h2>
+                        <p>ToDo List - In it user can ADD or DELETE the task and after adding the task, user can either
+                            EDIT or SAVE the task.</p>
+                        <a href="https://todo-list-aman.netlify.app" target="_blank"><i
+                                class="fa-solid fa-arrow-up-right-from-square"></i></a>
+                    </div>
+                </div>
+
+                <div class="project-box p-btn--1 p-btn--3">
+                    <div class="links">
+                        <div class="link1"></div>
+                        <div class="link2">
+                            <a href="https://github.com/amankumar2k15/Stopwatch" target="_blank"><i
+                                    class="fa-brands fa-github"></i></a>
+
+                        </div>
+                    </div>
+
+                    <div class="img">
+                        <img src="../img/project-img/project-img-5.png" alt="img4">
+                    </div>
+                    <h2>Stopwatch</h2>
+
+                    <div class="project-layer">
+                        <h2>Project 5</h2>
+                        <p>I made it by using HTML, CSS, JS. I added three buttons from which you can stop , start and
+                            reset the stopwatch anytime.</p>
+                        <a href="https://stopwatchaman.netlify.app" target="_blank"><i
+                                class="fa-solid fa-arrow-up-right-from-square"></i></a>
+                    </div>
+                </div>
+
+                <div class="project-box p-btn--1 p-btn--3">
+                    <div class="links">
+                        <div class="link1"></div>
+                        <div class="link2">
+                            <a href="https://github.com/amankumar2k15/Spotify-Clone" target="_blank"> <i
+                                    class="fa-brands fa-github"></i></a>
+
+                        </div>
+                    </div>
+
+                    <div class="img">
+                        <img src="../img/project-img/project-img-6.png" alt="img5">
+                    </div>
+                    <h2>Spotify Clone</h2>
+
+                    <div class="project-layer">
+                        <h2>Project 6</h2>
+                        <p>I made it by using HTML, CSS and JavaScript which looks like similar to real SPOTIFY website.
+                            Also added Audio-Visual effects.</p>
+                        <a href="https://spotifyclone100.netlify.app" target="_blank"><i
+                                class="fa-solid fa-arrow-up-right-from-square"></i></a>
+                    </div>
+                </div>
+
+                <div class="project-box p-btn--1 p-btn--3">
+                    <div class="links">
+                        <div class="link1"></div>
+                        <div class="link2">
+                            <a href="https://github.com/amankumar2k15/Google-Keep-Clone" target="_blank"><i
+                                    class="fa-brands fa-github"></i></a>
+                        </div>
+                    </div>
+
+                    <div class="img">
+                        <img src="../img/project-img/project-img-7.png" alt="img6">
+                    </div>
+                    <h2>Google Keep Clone</h2>
+
+                    <div class="project-layer">
+                        <h2>Project 7</h2>
+                        <p>In it, user can write a note and also i have added a ADD NOTE button. After adding a note ,
+                            user can EDIT, DELETE OR SAVE the note..</p>
+                        <a href="https://google-note-clone.netlify.app" target="_blank"><i
+                                class="fa-solid fa-arrow-up-right-from-square"></i></a>
+                    </div>
+                </div>
+
+                <div class="project-box p-btn--1 p-btn--3">
+                    <div class="links">
+                        <div class="link1"></div>
+                        <div class="link2">
+                            <a href="https://github.com/amankumar2k15/Temperature-Convertor" target="_blank"><i
+                                    class="fa-brands fa-github"></i></a>
+                        </div>
+                    </div>
+
+                    <div class="img">
+                        <img src="../img/project-img/project-img-9.png" alt="img8">
+                    </div>
+                    <h2>Temperature Convertor</h2>
+
+                    <div class="project-layer">
+                        <h2>Project 8</h2>
+                        <p>I made it by using HTML, CSS , JS, with it a user can input the value and then convert it
+                            into either fahrenheit or celcius.</p>
+                        <a href="https://tempconvertor112.netlify.app" target="_blank"><i
+                                class="fa-solid fa-arrow-up-right-from-square"></i></a>
+                    </div>
+                </div>
+
+
+
+                <div class="project-box p-btn--1 p-btn--3">
+                    <div class="links">
+                        <div class="link1"></div>
+                        <div class="link2">
+                            <a href="https://github.com/amankumar2k15/Increment-Counter" target="_blank"><i
+                                    class="fa-brands fa-github"></i></a>
+                        </div>
+                    </div>
+
+                    <div class="img">
+                        <img src="../img/project-img/project-img-8.png" alt="img7">
+                    </div>
+                    <h2>Increament Counter</h2>
+
+                    <div class="project-layer">
+                        <h2>Project 9</h2>
+                        <p>I made by using HTML5, CSS3 and JavaScript. In this Increament Counter, I use custom data
+                            attribute to reach to dataset value.</p>
+                        <a href="https://increament-counter-aman.netlify.app" target="_blank"><i
+                                class="fa-solid fa-arrow-up-right-from-square"></i></a>
+                    </div>
+                </div>
+
+                <div class="project-box p-btn--1 p-btn--2">
+                    <div class="links">
+                        <div class="link1"></div>
+                        <div class="link2">
+                            <a href="https://github.com/amankumar2k15/Personal-Portfolio" target="_blank"><i
+                                    class="fa-brands fa-github"></i></a>
+                        </div>
+                    </div>
+                    <div class="img">
+                        <img src="../img/project-img/project-img-10.png" alt="img9">
+                    </div>
+                    <h2>Personal Portfolio</h2>
+
+                    <div class="project-layer">
+                        <h2>Project 10</h2>
+                        <p>I made it by using HTML5, CSS3 and JS (libraries) . In it you can see about me, my services
+                            and all my projects.</p>
+                        <a href="https://amankumar-portfolio.netlify.app" target="_blank"><i
+                                class="fa-solid fa-arrow-up-right-from-square"></i></a>
+                    </div>
+                </div>
+
+            </div>
+        </section>
+        <!-- <-----------Projects Section End--------->
+
+
+
+        <!-- <-----------Contact Section Start--------->
+        <section class="contact" id="contact">
+            <h2 class="heading">Our<span> Contact</span></h2>
+
+            <div class="contact-box">
+
+                <div class="map-img">
+                    <img src="../img/contact-img/mapImg.png" alt="mapImg" />
+                    <div class="map-detail">
+                        <i class="fa-solid fa-location-dot"></i>
+                        <div class="map-text">
+                            <h2>Here is me</h2>
+                            <p>New Kabirpur, Sonipat(Haryana) <br /> India</p>
+                            <a href="https://www.google.com/maps/@28.9841484,77.0322979,3a,75y,230.08h,85.93t/data=!3m9!1e1!3m7!1sy5Asi7UThtgQRC7-ZIUwEg!2e0!7i13312!8i6656!9m2!1b1!2i21"
+                                target="_blank">Open_in_google_map</a>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="contact-container">
+                    <div class="contact-section">
+                        <div class="contact-sec-icon">
+                            <i class="fa-solid fa-phone"></i>
+                            <p>+91-7357432123</p>
+                        </div>
+                        <div class="contact-sec-icon">
+                            <i class="fa-sharp fa-solid fa-envelope"></i>
+                            <p>aman.kumar2k15@gmail.com</p>
+                        </div>
+                        <div class="contact-sec-icon">
+                            <i class="fa-solid fa-location-dot"></i>
+                            <p>Sonipat(Haryana), &nbsp India</p>
+                        </div>
+                    </div>
+
+                    <div class="form-section">
+                        <form action="https://formsubmit.co/aman.kumar2k15@gmail.com" method="POST" target="_blank">
+                            <div class="form-box">
+                                <input type="text" name="name" pattern="[a-zA-Z ]{4,}" id="name"
+                                    placeholder="Your Name">
+                            </div>
+                            <div class="form-box">
+                                <input type="text" name="email" pattern="[a-z0-9.]+@[a-z0-9.]+\.[a-z]{2,}$"
+                                    placeholder="Your Email" id="email" required>
+                            </div>
+                            <div class="form-box">
+                                <textarea name="message" id="message" cols="12" rows="8"></textarea>
+                            </div>
+
+                            <div class="form-box">
+                                <input type="submit" id="email" value="Send">
+                            </div>
+                        </form>
+                    </div>
+
+                </div>
+            </div>
+
+        </section>
+        <!-- <-----------Contact Section End---------->
+
+    </main>
+    <!-- <-----------Main Section End--------->
+
+    <footer>
+        <section class="footer">
+            <div class="footer-context">
+
+                <div class="footer-details">
+                    <h1>Aman Kumar</h1>
+                    <p>A freelancer, web designer and developer from Sonipat(Haryana), India. I always make websites
+                        that have unique designs and also has a good performance rate.</p>
+                </div>
+
+                <div class="footer-links">
+
+                    <div class="footer-link-1 footer-link">
+                        <h2>Important Links</h2>
+                        <ul>
+                            <li><a href="#home">Home</a></li>
+                            <li><a href="#about">About</a></li>
+                            <li><a href="#services">Services</a></li>
+                            <li><a href="#project">Projects</a></li>
+                            <li><a href="#contact">Contact us</a></li>
+                        </ul>
+                    </div>
+
+                    <div class="footer-link-2 footer-link">
+                        <h2>Contact Links</h2>
+                        <ul>
+                            <li><a href="tel: +91-7357432123">+91-7357432123</a></li>
+                            <li><a href="mailto: aman.kumar2k15@gmail.com">aman.kumar2k15@gmail.com</a></li>
+                            <li><a href="https://www.google.com/maps/@28.9841484,77.0322979,3a,75y,230.08h,85.93t/data=!3m9!1e1!3m7!1sy5Asi7UThtgQRC7-ZIUwEg!2e0!7i13312!8i6656!9m2!1b1!2i21"
+                                    target="_blank">Sonipat (Haryana), <br /> India</a></li>
+
+                        </ul>
+                    </div>
+
+                    <div class="footer-link-3 footer-link">
+                        <h2>Social Links</h2>
+                        <ul>
+                            <li><a href="https://www.facebook.com/home.php" target="_blank">Facebook</a></li>
+                            <li><a href="https://twitter.com/aman266226" target="_blank">Twitter</a></li>
+                            <li><a href="https://www.instagram.com/" target="_blank">Instagram</a></li>
+                            <li><a href="https://www.linkedin.com/in/amankumar1in/" target="_blank">LinkedIn</a></li>
+                            <li><a href="https://github.com/amankumar2k15" target="_blank">Github</a></li>
+
+                        </ul>
+                    </div>
+
+                </div>
+
+            </div>
+
+
+            <div class="footer-main">
+                <p>&copy; Portfolio</p>
+                <p>Designed by Aman Kumar</p>
+            </div>
+
+        </section>
+    </footer>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/animejs/3.2.1/anime.min.js"></script>
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+    <script src="https://unpkg.com/typed.js@2.0.132/dist/typed.umd.js"></script>
+    <script src="https://kit.fontawesome.com/404f36c780.js" crossorigin="anonymous"></script>
+    <script src="js/script.js"></script>
+
+</body>
+
+</html>
