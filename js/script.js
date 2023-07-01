@@ -11,7 +11,7 @@ let logo = document.getElementsByClassName('logo')[0];
 let card = document.getElementsByClassName('card')[0];
 let home_content = document.getElementsByClassName('home')[0];
 
-// window event 
+// // window event 
 window.addEventListener("load", function () {
     window.scrollTo(0, 0);
 })
@@ -28,14 +28,14 @@ const projectBtns = ((e) => {
 })
 
 
-const about_head = ((event) =>{
+const about_head = ((event) => {
     const about_box_clicked = event.target;
     const about_Num = about_box_clicked.dataset.aboutNum;
     const about_box_active = document.querySelectorAll(`.about-text-${about_Num}`)
 
     let about_text_box = document.querySelectorAll(".about-text")
-    about_text_box.forEach((curElement)=>curElement.classList.add("about-box-not-active"));
-   about_box_active.forEach((curElement)=>curElement.classList.remove("about-box-not-active"));
+    about_text_box.forEach((curElement) => curElement.classList.add("about-box-not-active"));
+    about_box_active.forEach((curElement) => curElement.classList.remove("about-box-not-active"));
 
 })
 
