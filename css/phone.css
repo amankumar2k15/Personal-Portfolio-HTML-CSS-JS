@@ -224,6 +224,10 @@
         font-size: 48%;
     }
 
+    .animated>.text {
+        font-size: 6rem;
+    }
+
     .home>.home-content>h3 {
         font-size: 2.5rem;
     }
@@ -296,6 +300,10 @@
     .contact-section>.contact-sec-icon {
         padding: 0 0.4rem;
         gap: 1rem;
+    }
+
+    .animated>.text {
+        font-size: 5rem;
     }
 
 }
