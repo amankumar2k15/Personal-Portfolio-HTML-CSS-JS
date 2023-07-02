@@ -711,6 +711,7 @@ main>.project {
 
 .project-box>h2 {
     color: var(--text-color);
+    font-weight: 500;
 }
 
 .project-box>.project-layer {
