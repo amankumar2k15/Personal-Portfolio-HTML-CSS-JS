@@ -270,6 +270,17 @@ main>.home-container::after {
     gap: 2.8rem;
 }
 
+.home>.home-button>.cvBtn {
+    background-color: #fff !important;
+    color: var(--main-color) !important;
+}
+
+.home>.home-button>.cvBtn:hover {
+    color: #fff !important;
+    background-color: var(--main-color) !important;
+}
+
+
 .rightCardSection {
     width: 47rem;
     height: 54.3rem;
@@ -317,6 +328,11 @@ main>.services {
     padding: 6rem 2%;
     background-color: #fff;
     color: #000;
+}
+
+.services>p {
+    width: 70%;
+    margin: 0 auto;
 }
 
 .services>.services-container {
