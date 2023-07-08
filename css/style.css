@@ -864,7 +864,7 @@ main>.contact {
 
 .map-detail>.map-text a {
     font-size: 1.15rem;
-    color: var(--main-color);
+    color: blue;
     margin-top: 2.4rem;
     text-decoration: underline;
 }
