@@ -49,14 +49,14 @@ box.addEventListener('click', () => {
     } else {
         bar.style.display = "flex"
         cross.style.display = "none"
-        nav.style.left = "-100%";
+        nav.style.left = "-104%";
     }
 })
 
 
 nav.addEventListener('click', function (e) {
     if (e.target) {
-        nav.style.left = "-100%";
+        nav.style.left = "-104%";
         cross.style.display = "none"
         bar.style.display = "flex"
     }
@@ -72,16 +72,6 @@ window.addEventListener('scroll', function () {
         scroll.style.display = "none";
     }
 })
-
-
-// typed 
-var typed = new Typed('#multiText', {
-    strings: ['Web Designer', 'Frontend Developer', 'Freelancer',],
-    loop: true,
-    delay: 80,
-    typeSpeed: 90,
-    backSpeed: 90,
-});
 
 
 //   split text into words in .animated

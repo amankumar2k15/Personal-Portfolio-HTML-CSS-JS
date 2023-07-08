@@ -15,28 +15,29 @@
 <body>
 
 
-    <!-- <-----------Header Section Start--------->
-    <header>
-        <!-- <-----------Animated Section Start--------->
-        <section class="animated">
-            <h2 class="text-1 text">Portfolio</h2>
-            <h2 class="text-2 text">Created By</h2>
-            <h2 class="text-3 text">Aman Kumar</h2>
-        </section>
-        <!-- <-----------Animated Section End--------->
+    <!-- <-----------Animated Section Start--------->
+    <section class="animated">
+        <h2 class="text-1 text">Portfolio</h2>
+        <h2 class="text-2 text">Created By</h2>
+        <h2 class="text-3 text">Aman Kumar</h2>
+    </section>
+    <!-- <-----------Animated Section End--------->
 
-        <section class="header">
+
+    <!-- <-----------Main Section Start--------->
+    <main>
+        <!-- <-----------Header Section Start--------->
+        <section class="header" id="header">
             <div class="logo">
-                <a href="index.html">Port<span>Folio</span></a>
+                <a class="logoAnchor" href="index.html">Port<span>Folio.</span></a>
             </div>
-
 
             <ul class="nav" id="nav">
                 <li><a href="#home">Home</a></li>
-                <li><a href="#about">About</a></li>
                 <li><a href="#services">Services</a></li>
-                <li><a href="#project">Projects</a></li>
-                <li><a href="#contact">Contact us</a></li>
+                <li><a href="#about">About</a></li>
+                <li><a href="#project">Portfolio</a></li>
+                <li><a href="#footer">Contact</a></li>
             </ul>
 
             <div class="box" id="box" onclick="box(event)">
@@ -45,179 +46,55 @@
             </div>
 
             <div class="scroll-btn" id="scroll-btn">
-                <a href="#home"><i class="fa-solid fa-arrow-up"></i></a>
+                <a href="#header "><i class="fa-solid fa-arrow-up"></i></a>
             </div>
 
-        </section>
-    </header>
-    <!-- <-----------Header Section End--------->
 
-    <!-- <-----------Main Section Start--------->
-    <main>
+        </section>
+        <!-- <-----------Header Section End--------->
+
+
         <!-- <-----------Home Section Start--------->
         <section class="home-container" id="home">
             <div class="home">
                 <div class="home-content">
-                    <h3>Hello, It's Me</h3>
-                    <h1>Aman Kumar</h1>
-                    <h3>And I'm a <span id="multiText"></span></h3>
-                    <p> I love to create beautiful and performant products <br> with delightful user experiences.</p>
+                    <h3>Hello, I'm <br />
+                        Aman Kumar A<br />
+                        Frontend Developer
+                    </h3>
+                    <p> I love to create beautiful and performant products with delightful <br />user
+                        experiences.</p>
+                    <div class="scribble"></div>
                     <div class="social-media">
                         <a href="https://www.facebook.com/home.php" target="_blank"><i class='bx bxl-facebook'></i></a>
                         <a href="https://twitter.com/aman266226" target="_blank"><i class='bx bxl-twitter'></i></a>
                         <a href="https://www.instagram.com/" target="_blank"><i class="fa-brands fa-instagram"></i></a>
-                        <a href="https://www.linkedin.com/in/amankumar1in/" target="_blank"><i
-                                class='bx bxl-linkedin'></i></a>
+                        <a href="contact.html" target="_blank"><i class='bx bxl-linkedin'></i></a>
                     </div>
                 </div>
                 <div class="home-button">
                     <a href="img/resume/Aman-FrontEndDev-1999.pdf" download="Aman-FrontEndDev-1999" class="btn">Download
                         CV</a>
-                    <a href="#contact" class="redBtn">Hire Me</a>
+                    <a href="contact.html" target="_blank" class="redBtn">Hire Me</a>
                 </div>
             </div>
 
             <div class="rightCardSection">
-                <div class="card">
-                    <div class="card-img">
-                        <img src="img/home-img/img-1.jpg" alt="img1">
-                    </div>
-                    <div class="details">
-                        <div class="content">
-                            <h2> Enthusiastic <br /> <span>Frontend Developer</span></h2>
-                            <div class="social-media">
-                                <a href="https://www.facebook.com/home.php" target="_blank"><i
-                                        class='bx bxl-facebook'></i></a>
-                                <a href="https://twitter.com/aman266226" target="_blank"><i
-                                        class='bx bxl-twitter'></i></a>
-                                <a href="https://www.instagram.com/" target="_blank"><i
-                                        class="fa-brands fa-instagram"></i></a>
-                                <a href="https://www.linkedin.com/in/amankumar1in/" target="_blank"><i
-                                        class='bx bxl-linkedin'></i></a>
-                            </div>
-                        </div>
+                <img src="./img/footer-img/footer.img.png" alt="aman">
+            </div>
 
-                    </div>
-                </div>
-                <i class="fa-solid fa-angles-right arrow"></i>
             </div>
 
         </section>
         <!-- <-----------Home Section End--------->
 
-        <!-- <-----------About Section Start--------->
-        <section class="about" id="about">
-            <h2 class="heading">About <span>Me</span></h2>
-            <div class="about-content">
-
-                <div class="rightCardSection leftCardSection">
-                    <div class="card">
-                        <div class="card-img">
-                            <img src="img/home-img/img-2.jpg" alt="AmanPic">
-                        </div>
-                        <div class="details">
-                            <div class="content">
-                                <h2>
-                                    <span class="hire">HIRE ME !</span>
-                                </h2>
-                            </div>
-
-                        </div>
-                    </div>
-                    <i class="fa-solid fa-angles-right arrow"></i>
-                </div>
-
-                <div class="about-details">
-                    <div class="about-headings" onclick="about_head(event)">
-                        <h3 class="p-btn pro-abt-btns" data-about-num="1" id="head-dev">Frontend Developer</h3>
-                        <h3 class="p-btn pro-abt-btns" data-about-num="2" id="head-edu">Education</h3>
-                        <h3 class="p-btn pro-abt-btns" data-about-num="3" id="head-skills">Skills</h3>
-                    </div>
-
-                    <div class="about-heading-content">
-
-                        <div class="about-text-1 about-text">
-                            <p>I'm a success-driven, determined Front-end Web Developer. I'm good at using HTML, SCSS ,
-                                JavaScript and React Js to build accessible component-based web pages and systems. I
-                                also make the
-                                websites more & more interactive with web animations. A passionate person willing to
-                                learn more technologies to become a better developer than i was yesterday.
-                            </p>
-                            <a href="img/resume/Aman-FrontEndDev-1999.pdf" download="Aman-FrontEndDev-1999"
-                                class="btn">Download
-                                CV</a>
-                        </div>
-
-                        <div class="about-text-2 about-text">
-                            <div class="edu-details">
-                                <h1>2018-2019 <span>(Intermediate)</span></h1>
-                                <p>Passed 12<sup>th</sup> from National Institute of Open Schooling (NIOS Board).</p>
-                            </div>
-                            <div class="edu-details">
-                                <h1>2019-2022 <span>(Graduation)</span></h1>
-                                <p>Passed BSC(Non-medical) from Maharshi Dayanand University.</p>
-                            </div>
-                            <div class="edu-details">
-                                <h1>2022-Present <span>(Post Graduation)</span></h1>
-                                <p>Pursuing MCA from Chandigarh University.</p>
-                            </div>
-                        </div>
-
-                        <div class="about-text-3 about-text">
-                            <div class="about-stats">
-                                <h3>React Js</h3>
-                                <div class="about-progress-bar about-progress-3">
-                                    <span style="--left-pos: 65%;">70%</span>
-                                </div>
-                            </div>
-                            <div class="about-stats">
-                                <h3>HTML</h3>
-                                <div class="about-progress-bar about-progress-5">
-                                    <span style="--left-pos: 85%;">90%</span>
-                                </div>
-                            </div>
-                            <div class="about-stats">
-                                <h3>CSS 3</h3>
-                                <div class="about-progress-bar about-progress-2">
-                                    <span style="--left-pos: 75%;">80%</span>
-                                </div>
-                            </div>
-                            <div class="about-stats">
-                                <h3>JavaScript</h3>
-                                <div class="about-progress-bar about-progress-3">
-                                    <span style="--left-pos: 65%;">70%</span>
-                                </div>
-                            </div>
-                            <div class="about-stats">
-                                <h3>Bootstrap 5</h3>
-                                <div class="about-progress-bar about-progress-4">
-                                    <span style="--left-pos: 75%;">80%</span>
-                                </div>
-                            </div>
-                            <div class="about-stats">
-                                <h3>SCSS</h3>
-                                <div class="about-progress-bar about-progress-5">
-                                    <span style="--left-pos: 85%;">90%</span>
-                                </div>
-                            </div>
-
-                        </div>
-
-                    </div>
-                </div>
-            </div>
-        </section>
-
-
-
-
-
-        <!-- <-----------About Section End--------->
-
 
         <!-- <-----------Services Section Start--------->
         <section class="services" id="services">
-            <h2 class="heading">Our <span>Services</span></h2>
+            <h2 class="heading">Services</h2>
+            <h3 class="sub_heading heading">Expertise Service! Let’s check it out </h3>
+            <p class="para"> Creating and building websites for individuals, businesses, or organizations. This may
+                involve designing the user interface, coding, and implementing the website's functionality.</p>
 
             <div class="services-container">
 
@@ -230,21 +107,20 @@
                             <h3>Designing</h3>
                             <p>Designers are responsible artists. Whether it is web designing or development it requires
                                 a sense of imagination for looking at the output even before it is published.</p>
-                            <a href="#contact" class="btn">Get in touch</a>
                         </div>
                     </div>
                 </div>
 
                 <div class="services-box">
                     <div class="services-content">
-                        <div class="services-icon">
+                        <div class="services-icon middleIcon">
                             <i class="fa-solid fa-person"></i>
                         </div>
                         <div class="services-text">
                             <h3>Freelancing</h3>
-                            <p>People Who Are Crazy Enough To Think They Can Change The World, Are The Ones Who Do. We
+                            <p>People Who Are Crazy Enough To Think They Can Change The World, Are
+                                The Ones Who Do. We
                                 provide the best services. To contact us, please click on the button below.</p>
-                            <a href="#contact" class="btn">Get in touch</a>
                         </div>
                     </div>
                 </div>
@@ -260,51 +136,6 @@
                                 It attracts the right kinds of visitors.
                                 Guides them to the main services or product you offer.
                                 Collect Contact details for future ongoing relation.</p>
-                            <a href="#contact" class="btn">Get in touch</a>
-                        </div>
-                    </div>
-                </div>
-                <div class="services-box">
-                    <div class="services-content">
-                        <div class="services-icon">
-                            <i class="fa-sharp fa-solid fa-code"></i>
-                        </div>
-                        <div class="services-text">
-                            <h3>SEO</h3>
-                            <p>We always opt for the SEO-friendly markup that maximizes the website visibility. We
-                                always
-                                make sure that every converted web page loads faster and optimizes the user-experience.
-                            </p>
-                            <a href="#contact" class="btn">Get in touch</a>
-                        </div>
-                    </div>
-                </div>
-                <div class="services-box">
-                    <div class="services-content">
-                        <div class="services-icon">
-                            <i class="fa-solid fa-magnifying-glass-plus"></i>
-                        </div>
-                        <div class="services-text">
-                            <h3>Debugging</h3>
-                            <p>The hardest part of the software task is arriving at a complete and consistent
-                                specification, and much of the essence of building a program is in fact the debugging of
-                                the specification.</p>
-                            <a href="#contact" class="btn">Get in touch</a>
-                        </div>
-                    </div>
-                </div>
-                <div class="services-box">
-                    <div class="services-content">
-                        <div class="services-icon">
-                            <i class="fa-solid fa-palette"></i>
-                        </div>
-                        <div class="services-text">
-                            <h3>PSD to HTML</h3>
-                            <p>We manually code a design’s every pixel to guarantee the best outcome. We follow
-                                international
-                                coding standards and fulfill our clients’ all requirements to ensure 100% satisfaction.
-                            </p>
-                            <a href="#contact" class="btn">Get in touch</a>
                         </div>
                     </div>
                 </div>
@@ -313,13 +144,178 @@
         </section>
         <!-- <-----------Services Section End--------->
 
+        <!-- <-----------About Section Start--------->
+        <section class="about" id="about">
+            <div class="about-Img">
+                <img src="img/about-img/Aman_pic.png" alt="aman pic">
+            </div>
+            <div class="about-details">
+                <h2 class="heading">About Us</h2>
+                <h3 class="sub_heading heading">Bridging Design And Functionality With Elegant Code</h3>
+                <p class="para">In the world of web development, frontend is the face that users interact with, making
+                    it crucial for success.</p>
+                <div class="about-box">
+                    <img src="img/about-img/rightArrow.svg" alt="rightArrow">
+                    <div class="about-box-details">
+                        <p class="para para1">5K+ Complete Project</p>
+                        <p class="para para2">Over 5,000 completed projects and counting,solidifying our expertise and
+                            commitment to excellence.
+                    </div>
+                </div>
+                <div class="about-box about-box-2">
+                    <img src="img/about-img/rightArrow.svg" alt="rightArrow">
+                    <div class="about-box-details">
+                        <p class="para para1">8 Year of Experience</p>
+                        <p class="para para2">With 8 years of expertise, we deliver frontend solutions with a
+                            mastery that only experience can bring.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- <-----------About Section End--------->
+
+        <!-- <-----------Process Section Start-------->
+        <section class="process" id="process">
+            <div class="process-headings">
+                <h2 class="heading">Process</h2>
+                <h3 class="sub_heading heading">My Work Process</h3>
+            </div>
+            <div class="process-container">
+
+                <div class="process-box process-box-1">
+                    <div class="process-img">
+                        <img class="img1" src="img/process-img/circle.svg" alt="process">
+                        <img class="img2" src="img/process-img/planning 1.png" alt="process">
+                    </div>
+                    <p class="process-para1">Business planning</p>
+                    <p class="process-para2">From concept to completion, we bring your web development dreams to life.
+                    </p>
+                </div>
+
+                <img class="vectorImg" src="img/process-img/prcess-vector.svg" alt="">
+
+                <div class="process-box process-box-2">
+                    <div class="process-img">
+                        <img class="img1" src="img/process-img/circle.svg" alt="process">
+                        <img class="img2" src="img/process-img/planning 2.png" alt="process">
+                    </div>
+                    <p class="process-para1">Design Strategy</p>
+                    <p class="process-para2">Creating visually stunning websites that reflect your brand's unique
+                        identity.</p>
+                </div>
+
+                <img class="vectorImg" src="img/process-img/prcess-vector.svg" alt="">
+
+                <div class="process-box process-box-3">
+                    <div class="process-img">
+                        <img class="img1" src="img/process-img/circle.svg" alt="process">
+                        <img class="img2" src="img/process-img/planning 3.png" alt="process">
+                    </div>
+                    <p class="process-para1">Grow Your Buisness</p>
+                    <p class="process-para2">Maximize conversions and boost revenue with a conversion-focused website
+                        design.</p>
+                </div>
+
+            </div>
+
+        </section>
+
+        <!-- <-----------Process Section End-------->
+
+
+        <!-- <-----------Testimonial Section Start-------->
+        <section class="testimonial" id="testimonial">
+            <div class="testimonial-headings">
+                <h2 class="heading">Testimonials</h2>
+                <h3 class="sub_heading heading">What People Say’s About Us</h3>
+            </div>
+            <div class="testimonial-container">
+
+                <div class="testimonial-box">
+                    <div class="testimonial-content">
+                        <div class="testimonial-ratings">
+                            <img src="img/Testimonial-img/Star.svg" alt="">
+                            <img src="img/Testimonial-img/Star.svg" alt="">
+                            <img src="img/Testimonial-img/Star.svg" alt="">
+                            <img src="img/Testimonial-img/Star.svg" alt="">
+                            <img src="img/Testimonial-img/Star.svg" alt="">
+                        </div>
+                        <div class="testimonial-text">
+                            <p>Working with them was a game-changer for our business. Their expertise and dedication
+                                resulted in an outstanding website that truly represents our brand.
+                            </p>
+                        </div>
+                        <div class="testimonial-context">
+                            <img src="img/Testimonial-img/img-1.png" alt="">
+                            <div class="testimonial-details">
+                                <h4>Lorenz Kaif</h4>
+                                <p class="testimonial-para">CEO</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="testimonial-box">
+                    <div class="testimonial-content">
+                        <div class="testimonial-ratings">
+                            <img src="img/Testimonial-img/Star.svg" alt="">
+                            <img src="img/Testimonial-img/Star.svg" alt="">
+                            <img src="img/Testimonial-img/Star.svg" alt="">
+                            <img src="img/Testimonial-img/Star.svg" alt="">
+                            <img src="img/Testimonial-img/Star.svg" alt="">
+                        </div>
+                        <div class="testimonial-text">
+                            <p>Their professionalism and expertise surpassed all our expectations. The end result was a
+                                beautifully designed website that perfectly represents our brand.
+                            </p>
+                        </div>
+                        <div class="testimonial-context">
+                            <img src="img/Testimonial-img/img-2.png" alt="">
+                            <div class="testimonial-details">
+                                <h4>Zeeshan Anwar</h4>
+                                <p class="testimonial-para">CEO</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="testimonial-box">
+                    <div class="testimonial-content">
+                        <div class="testimonial-ratings">
+                            <img src="img/Testimonial-img/Star.svg" alt="">
+                            <img src="img/Testimonial-img/Star.svg" alt="">
+                            <img src="img/Testimonial-img/Star.svg" alt="">
+                            <img src="img/Testimonial-img/Star.svg" alt="">
+                            <img src="img/Testimonial-img/Star.svg" alt="">
+                        </div>
+                        <div class="testimonial-text">
+                            <p>Highly professional team with excellent communication. We were impressed by their ability
+                                to deliver exceptional results within our tight deadline.
+                            </p>
+                        </div>
+                        <div class="testimonial-context">
+                            <img src="img/Testimonial-img/img-3.png" alt="">
+                            <div class="testimonial-details">
+                                <h4>Samaira Khan</h4>
+                                <p class="testimonial-para">CEO</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+
+            </div>
+        </section>
+        <!-- <-----------Testimonial Section End-------->
 
         <!-- <-----------Projects Section Start--------->
         <section class="project" id="project">
-            <h2 class="heading">Our<span> Projects</span></h2>
-
+            <div class="projects-headings">
+                <h2 class="heading">Portfolio</h2>
+                <h3 class="sub_heading heading">Digital Product Showcases</h3>
+            </div>
             <div class="project-btns" onclick="projectBtns(event)">
-                <div class="p-btn pro-abt-btns" data-btn-num="1">All</div>
+                <div class="p-btn pro-abt-btns all-projects" data-btn-num="1">All</div>
                 <div class="p-btn pro-abt-btns" data-btn-num="2">HTML & CSS</div>
                 <div class="p-btn pro-abt-btns" data-btn-num="3">JavaScript</div>
                 <div class="p-btn pro-abt-btns" data-btn-num="4">React</div>
@@ -328,7 +324,6 @@
             <div class="project-container">
                 <div class="project-box p-btn--1 p-btn--4">
                     <div class="links">
-                        <div class="link1"></div>
                         <div class="link2">
                             <a href="https://github.com/amankumar2k15/Dashboard" target="_blank"><i
                                     class="fa-brands fa-github"></i></a>
@@ -342,7 +337,7 @@
 
                     <div class="project-layer">
                         <h2>Project 1</h2>
-                        <p>Created a Responsive Dashboard by using React and Bootstrap which contains Todo , apexChart
+                        <p>Created a Responsive Dashboard by using React and Bootstrap which contains Todo, apexChart
                             and my profile.
                         </p>
 
@@ -352,7 +347,6 @@
                 </div>
                 <div class="project-box p-btn--1 p-btn--4">
                     <div class="links">
-                        <div class="link1"></div>
                         <div class="link2">
                             <a href="https://github.com/amankumar2k15/React-Login-Registration-Form" target="_blank"><i
                                     class="fa-brands fa-github"></i></a>
@@ -374,7 +368,6 @@
                 </div>
                 <div class="project-box p-btn--1 p-btn--4">
                     <div class="links">
-                        <div class="link1"></div>
                         <div class="link2">
                             <a href="https://github.com/amankumar2k15/Weather_App" target="_blank"><i
                                     class="fa-brands fa-github"></i></a>
@@ -400,7 +393,6 @@
 
                 <div class="project-box p-btn--1 p-btn--2">
                     <div class="links">
-                        <div class="link1"></div>
                         <div class="link2">
                             <a href="https://github.com/amankumar2k15/Food-Delivery-Website" target="_blank"><i
                                     class="fa-brands fa-github"></i></a>
@@ -423,7 +415,6 @@
 
                 <div class="project-box p-btn--1 p-btn--2">
                     <div class="links">
-                        <div class="link1"></div>
                         <div class="link2">
                             <a href="https://github.com/amankumar2k15/Beefeater-Website" target="_blank"> <i
                                     class="fa-brands fa-github"></i></a>
@@ -447,7 +438,6 @@
 
                 <div class="project-box p-btn--1 p-btn--3">
                     <div class="links">
-                        <div class="link1"></div>
                         <div class="link2">
                             <a href="https://github.com/amankumar2k15/ToDo-List-App" target="_blank"><i
                                     class="fa-brands fa-github"></i></a>
@@ -470,7 +460,6 @@
 
                 <div class="project-box p-btn--1 p-btn--3">
                     <div class="links">
-                        <div class="link1"></div>
                         <div class="link2">
                             <a href="https://github.com/amankumar2k15/Login-Registration-Form-JS-" target="_blank"> <i
                                     class="fa-brands fa-github"></i></a>
@@ -493,7 +482,6 @@
 
                 <div class="project-box p-btn--1 p-btn--3">
                     <div class="links">
-                        <div class="link1"></div>
                         <div class="link2">
                             <a href="https://github.com/amankumar2k15/Stopwatch" target="_blank"><i
                                     class="fa-brands fa-github"></i></a>
@@ -516,7 +504,6 @@
 
                 <div class="project-box p-btn--1 p-btn--3">
                     <div class="links">
-                        <div class="link1"></div>
                         <div class="link2">
                             <a href="https://github.com/amankumar2k15/Spotify-Clone" target="_blank"> <i
                                     class="fa-brands fa-github"></i></a>
@@ -540,7 +527,6 @@
 
                 <div class="project-box p-btn--1 p-btn--3">
                     <div class="links">
-                        <div class="link1"></div>
                         <div class="link2">
                             <a href="https://github.com/amankumar2k15/Google-Keep-Clone" target="_blank"><i
                                     class="fa-brands fa-github"></i></a>
@@ -563,7 +549,6 @@
 
                 <div class="project-box p-btn--1 p-btn--3">
                     <div class="links">
-                        <div class="link1"></div>
                         <div class="link2">
                             <a href="https://github.com/amankumar2k15/Temperature-Convertor" target="_blank"><i
                                     class="fa-brands fa-github"></i></a>
@@ -586,7 +571,6 @@
 
                 <div class="project-box p-btn--1 p-btn--3">
                     <div class="links">
-                        <div class="link1"></div>
                         <div class="link2">
                             <a href="https://github.com/amankumar2k15/Increment-Counter" target="_blank"><i
                                     class="fa-brands fa-github"></i></a>
@@ -609,7 +593,6 @@
 
                 <div class="project-box p-btn--1 p-btn--2">
                     <div class="links">
-                        <div class="link1"></div>
                         <div class="link2">
                             <a href="https://github.com/amankumar2k15/Personal-Portfolio" target="_blank"><i
                                     class="fa-brands fa-github"></i></a>
@@ -633,129 +616,32 @@
         </section>
         <!-- <-----------Projects Section End--------->
 
-
-
-        <!-- <-----------Contact Section Start--------->
-        <section class="contact" id="contact">
-            <h2 class="heading">Our<span> Contact</span></h2>
-
-            <div class="contact-box">
-
-                <div class="map-img">
-                    <img src="../img/contact-img/mapImg.png" alt="mapImg" />
-                    <div class="map-detail">
-                        <i class="fa-solid fa-location-dot"></i>
-                        <div class="map-text">
-                            <h2>Here is me</h2>
-                            <p>New Kabirpur, Sonipat(Haryana) <br /> India</p>
-                            <a href="https://www.google.com/maps/@28.9841484,77.0322979,3a,75y,230.08h,85.93t/data=!3m9!1e1!3m7!1sy5Asi7UThtgQRC7-ZIUwEg!2e0!7i13312!8i6656!9m2!1b1!2i21"
-                                target="_blank">Open_in_google_map</a>
-                        </div>
-                    </div>
-                </div>
-
-                <div class="contact-container">
-                    <div class="contact-section">
-                        <div class="contact-sec-icon">
-                            <i class="fa-solid fa-phone"></i>
-                            <p>+91-7357432123</p>
-                        </div>
-                        <div class="contact-sec-icon">
-                            <i class="fa-sharp fa-solid fa-envelope"></i>
-                            <p>aman.kumar2k15@gmail.com</p>
-                        </div>
-                        <div class="contact-sec-icon">
-                            <i class="fa-solid fa-location-dot"></i>
-                            <p>Sonipat(Haryana), &nbsp India</p>
-                        </div>
-                    </div>
-
-                    <div class="form-section">
-                        <form action="https://formsubmit.co/aman.kumar2k15@gmail.com" method="POST" target="_blank">
-                            <div class="form-box">
-                                <input type="text" name="name" pattern="[a-zA-Z ]{4,}" id="name"
-                                    placeholder="Your Name">
-                            </div>
-                            <div class="form-box">
-                                <input type="text" name="email" pattern="[a-z0-9.]+@[a-z0-9.]+\.[a-z]{2,}$"
-                                    placeholder="Your Email" id="email" required>
-                            </div>
-                            <div class="form-box">
-                                <textarea name="message" id="message" cols="12" rows="8"></textarea>
-                            </div>
-
-                            <div class="form-box">
-                                <input type="submit" id="email" value="Send">
-                            </div>
-                        </form>
-                    </div>
-
-                </div>
-            </div>
-
-        </section>
-        <!-- <-----------Contact Section End---------->
-
     </main>
     <!-- <-----------Main Section End--------->
 
     <footer>
-        <section class="footer">
-            <div class="footer-context">
-
+        <section class="footer" id="footer">
+            <div class="footer-content">
                 <div class="footer-details">
-                    <h1>Aman Kumar</h1>
-                    <p>A freelancer, web designer and developer from Sonipat(Haryana), India. I always make websites
-                        that have unique designs and also has a good performance rate.</p>
+                    <h3 class="footer-heading">
+                        Got A Project! Let's Talk To Me
+                    </h3>
+                    <p class="footer-para">
+                        Let's collaborate on your project and create something extraordinary. Contact us to get the
+                        conversation started.
+                    </p>
+                    <div class="scribble"></div>
+                    <div class="footerContact-btn">
+                        <a href="contact.html" target="_blank" class="redBtn">Contact Us</a>
+                        <img src="img/footer-img/get.svg" alt="">
+                    </div>
                 </div>
-
-                <div class="footer-links">
-
-                    <div class="footer-link-1 footer-link">
-                        <h2>Important Links</h2>
-                        <ul>
-                            <li><a href="#home">Home</a></li>
-                            <li><a href="#about">About</a></li>
-                            <li><a href="#services">Services</a></li>
-                            <li><a href="#project">Projects</a></li>
-                            <li><a href="#contact">Contact us</a></li>
-                        </ul>
-                    </div>
-
-                    <div class="footer-link-2 footer-link">
-                        <h2>Contact Links</h2>
-                        <ul>
-                            <li><a href="tel: +91-7357432123">+91-7357432123</a></li>
-                            <li><a href="mailto: aman.kumar2k15@gmail.com">aman.kumar2k15@gmail.com</a></li>
-                            <li><a href="https://www.google.com/maps/@28.9841484,77.0322979,3a,75y,230.08h,85.93t/data=!3m9!1e1!3m7!1sy5Asi7UThtgQRC7-ZIUwEg!2e0!7i13312!8i6656!9m2!1b1!2i21"
-                                    target="_blank">Sonipat (Haryana), <br /> India</a></li>
-
-                        </ul>
-                    </div>
-
-                    <div class="footer-link-3 footer-link">
-                        <h2>Social Links</h2>
-                        <ul>
-                            <li><a href="https://www.facebook.com/home.php" target="_blank">Facebook</a></li>
-                            <li><a href="https://twitter.com/aman266226" target="_blank">Twitter</a></li>
-                            <li><a href="https://www.instagram.com/" target="_blank">Instagram</a></li>
-                            <li><a href="https://www.linkedin.com/in/amankumar1in/" target="_blank">LinkedIn</a></li>
-                            <li><a href="https://github.com/amankumar2k15" target="_blank">Github</a></li>
-
-                        </ul>
-                    </div>
-
+                <div class="footerImg">
+                    <img src="img/footer-img/footer.img.png" alt="footer-Img">
                 </div>
-
             </div>
-
-
-            <div class="footer-main">
-                <p>&copy; Portfolio</p>
-                <p>Designed by Aman Kumar</p>
-            </div>
-
         </section>
+
     </footer>
 
     <script src="https://cdnjs.cloudflare.com/ajax/libs/animejs/3.2.1/anime.min.js"></script>
