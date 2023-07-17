@@ -8,8 +8,7 @@ let multiText = document.getElementById('multiText');
 let animated = document.getElementsByClassName('animated')[0];
 let header = document.getElementsByClassName('header')[0];
 let logo = document.getElementsByClassName('logo')[0];
-let card = document.getElementsByClassName('card')[0];
-let home_content = document.getElementsByClassName('home')[0];
+
 
 // // window event 
 window.addEventListener("load", function () {
@@ -25,18 +24,6 @@ const projectBtns = ((e) => {
     let p_box = document.querySelectorAll('.project-box');
     p_box.forEach((curElem) => curElem.classList.add('p-box-not-active'));
     p_box_active.forEach((curElem) => curElem.classList.remove('p-box-not-active'));
-})
-
-
-const about_head = ((event) => {
-    const about_box_clicked = event.target;
-    const about_Num = about_box_clicked.dataset.aboutNum;
-    const about_box_active = document.querySelectorAll(`.about-text-${about_Num}`)
-
-    let about_text_box = document.querySelectorAll(".about-text")
-    about_text_box.forEach((curElement) => curElement.classList.add("about-box-not-active"));
-    about_box_active.forEach((curElement) => curElement.classList.remove("about-box-not-active"));
-
 })
 
 
@@ -95,8 +82,8 @@ document.addEventListener('DOMContentLoaded', () => {
         delay: anime.stagger(100),
         once: true,
     })
-
 })
+
 document.addEventListener('DOMContentLoaded', () => {
     setTimeout(function () {
         animated.style.display = "none"
@@ -126,31 +113,11 @@ document.addEventListener('DOMContentLoaded', function () {
             },
             opacity: [0, 1],
         })
-
-        anime({
-            targets: ".header",
-            top: 40,
-            duration: 1000,
-            easing: "easeOutExpo",
-            delay: (el, i) => {
-                return 1000 + 110 + i
-            },
-            opacity: [0, 1],
-        })
-
-        anime({
-            targets: ".card",
-            translateX: [-400, 0],
-            delay: 1600,
-            easing: "easeOutExpo",
-            duration: 1000,
-            opacity: [0, 1],
-        })
         anime({
             targets: ".home",
             translateX: [-800, 0],
             delay: (el, i) => {
-                return 1600 + 160 + i
+                return 1500 + 160 + i
             },
             easing: "easeOutExpo",
             duration: 1000,
@@ -159,12 +126,6 @@ document.addEventListener('DOMContentLoaded', function () {
 
     }, 3000);
 })
-
-// Animation on scroll 
-AOS.init({
-    once: false,
-});
-
 
 window.onbeforeunload = () => {
     window.scrollTo(0, 0);
