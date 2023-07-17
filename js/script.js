@@ -4,7 +4,6 @@ let box = document.getElementById('box');
 let bar = document.getElementById('bar');
 let cross = document.getElementById('cross');
 let scroll = document.getElementById('scroll-btn');
-let multiText = document.getElementById('multiText');
 let animated = document.getElementsByClassName('animated')[0];
 let header = document.getElementsByClassName('header')[0];
 let logo = document.getElementsByClassName('logo')[0];
@@ -50,7 +49,7 @@ nav.addEventListener('click', function (e) {
 })
 
 
-// scroll 
+// scroll btn
 window.addEventListener('scroll', function () {
     if (window.pageYOffset > 200) {
         scroll.style.display = "flex";
