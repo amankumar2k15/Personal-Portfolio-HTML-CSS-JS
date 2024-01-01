@@ -79,7 +79,6 @@ body {
     color: var(--main-color);
 }
 
-
 .header>ul {
     display: flex;
     gap: 2.5rem;
@@ -95,8 +94,6 @@ body {
     transition: all 0.5s;
     position: relative;
 }
-
-
 
 .header>ul>li>a:hover,
 .header>ul>li:nth-child(1)>a {
